@@ -21,7 +21,7 @@
             Home
           </li>
           <li class="text-black-500">
-            <router-link to="/../components/mainDiary">Entries</router-link>
+            <router-link to ="./components/mainDiary">Entries</router-link>
           </li>
           <li class="text-black-500 ">
             New Entry

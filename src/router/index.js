@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import mainDiary from './/../components/mainDiary.vue'
 
+
 const routes = [
     {
         path: '/../components/mainDiary',
