@@ -21,7 +21,7 @@
             Home
           </li>
           <li class="text-black-500">
-            <router-link to="./mainDiaryVue">Entries</router-link>
+            <router-link to="/../components/mainDiary">Entries</router-link>
           </li>
           <li class="text-black-500 ">
             New Entry
@@ -34,6 +34,8 @@
 </template>
 
 <script>
+
+
 export default {
   data() {
     return {

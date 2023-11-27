@@ -1,12 +1,16 @@
 <template>
   <div class="md:flex sm:fle-col" id="app">
     <div class="sm:full h-auto md:w-[500px] md:h-[600px]">
-      <sideBar @entry-saved="navigateToEntries"/>
+      <sideBar/>
     </div>
-    <div class="w-full px-4">
-      <mainDiary @entry-saved="navigateToEntries"/>
+    <div class="w-full flex md:flex-col px-4">
+      <mainDiary/>
+      <router-view/>
     </div>
   </div>
+  <div class="">
+  
+</div>
 </template>
 
 <script>
@@ -19,11 +23,6 @@ export default {
     mainDiary,
     sideBar
   },
-  methods: {
-    navigateToEntries() {
-      this.$router.push('/mainDiaryVue');
-    }
-  }
 };
 </script>
 
