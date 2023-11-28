@@ -6,27 +6,23 @@
 
     <div class="flex-1 p-4 ">
       <div class="mt-4">
-        <h2 class="text-lg font-semibold mb-2">Search</h2>
+        <h2 class="text-lg font-semibold mb-2 text-blue-600">Home</h2>
         <input
           type="text"
           v-model="searchQuery"
-          class="w-full p-2 border rounded"
+          class="w-full p-2 border"
           placeholder="Search diary..."
         />
       </div>
     
       <nav>
         <ul class="space-y-2">
-          <li class="text-black-500 ">
-            Home
-          </li>
-          <li class="text-black-500">
-            <router-link to ="/../components/mainDiary">Entries</router-link>
-          </li>
-          <li class="text-black-500 ">
-            New Entry
-          </li>
-          
+          <li class="text-blue-600 border-8 cursor-pointer ">
+            <router-link to ="/../components/mainDiary">New Entry</router-link>
+          </li> 
+          <li class="text-blue-600 border-8">
+            <router-link to ="">View All Entries</router-link>
+          </li>       
         </ul>
       </nav>
     </div>

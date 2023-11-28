@@ -3,7 +3,7 @@
     <div>
       <div class="flex flex-col gap-4 mt-2 mb-6">
         <input v-model="newEntry.heading" placeholder="Enter heading" class="p-2 mb-2" />
-        <textarea v-model="newEntry.content" placeholder="Enter content" class="p-2"></textarea>
+        <input v-model="newEntry.content" placeholder="Enter content" class="p-2">
         <button @click="saveEntry" class="bg-blue-500 text-white p-2">Save</button>
       </div>
   
