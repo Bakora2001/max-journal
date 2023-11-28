@@ -5,13 +5,10 @@
     </div>
     <div class="w-full flex md:flex-col px-4">
       <mainDiary/>
-      <router-view/>
+      
     </div>
     
   </div>
-  <div class="">
-  
-</div>
 </template>
 
 <script>
