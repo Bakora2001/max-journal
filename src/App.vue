@@ -7,6 +7,7 @@
       <mainDiary/>
       <router-view/>
     </div>
+    
   </div>
   <div class="">
   
