@@ -18,10 +18,10 @@
       <nav>
         <ul class="space-y-2">
           <li class="text-blue-600 border-8 cursor-pointer ">
-            <router-link :to="{name: 'mainDiary'}">New Entry</router-link>
+            <!-- <router-link :to="{name: 'mainDiary'}">New Entry</router-link> -->
           </li> 
           <li class="text-blue-600 border-8">
-            <router-link to ="">View All Entries</router-link>
+            <router-link :to="{name: 'diaryList'}">View All Entries</router-link>
           </li>       
         </ul>
       </nav>
