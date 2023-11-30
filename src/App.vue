@@ -1,9 +1,10 @@
+<!-- App.vue -->
 <template>
   <div class="md:flex sm:fle-col" id="app">
     <div class="sm:full h-auto md:w-[500px] md:h-[600px]">
       <sideBar/>
     </div>
-    <div class="w-full flex md:flex-col px-4">
+    <div class="bg-[logo.png] w-full flex md:flex-col px-4">
       <mainDiary/>
       <router-view/>
     </div>
