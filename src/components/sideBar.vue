@@ -4,7 +4,6 @@
     <div class="bg-gray-800 text-white p-4">
       <h1 class="text-2xl font-bold">Diary Journal</h1>
     </div>
-
     <div class="flex-1 p-4 ">
       <div class="mt-4">
         <h2 class="text-lg font-semibold mb-2 text-blue-600">Home</h2>
