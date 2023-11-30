@@ -73,6 +73,7 @@ export default {
         console.error("Error editing entry:", error);
       }
     },
+    
     async deleteEntry(entryToDelete) {
       try {
         await axios.delete(`http://localhost:3000/entries/${entryToDelete.id}`);
