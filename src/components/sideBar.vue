@@ -1,3 +1,4 @@
+<!-- sideBar.vue -->
 <template>
   <div class="flex flex-col h-full bg-gray-200">
     <div class="bg-gray-800 text-white p-4">
@@ -14,18 +15,15 @@
           placeholder="Search diary..."
         />
       </div>
-
+    
       <nav>
-        <ul class="space-y-2">
+        <ul class="space-y-2"> 
           <li class="text-blue-600 border-8">
-            <router-link :to="{ name: 'dairyList' }">New Entry</router-link>
-          </li>
-          <li class="text-blue-600 border-8">
-            <router-link :to="{ name: 'dairyList' }">Add New Entry</router-link>
-          </li>
-          <!-- <li class="text-blue-600 border-8">
-            <router-link :to="{ name: 'diaryList' }">View All Entries</router-link>
-          </li> -->
+            <router-link :to="{name: 'diaryList'}">Add New Entry</router-link>
+          </li>   
+          <li class="text-blue-600 border-8 cursor-pointer ">
+         >View All Entries  
+          </li>       
         </ul>
       </nav>
     </div>
@@ -33,9 +31,16 @@
 </template>
 
 <script>
+
+
 export default {
-  props: 'searchQuery',
+  data() {
+    return {
+      searchQuery: '',
+    };
+  },
 };
 </script>
+
 
 <style></style>
