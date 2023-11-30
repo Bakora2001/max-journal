@@ -1,6 +1,6 @@
 mainDiary.vue
 <template>
-  <div class="">
+  <div class="bg-blue-500">
     <div class="flex flex-col gap-4 mt-2 mb-6">
       <input v-model="newEntry.heading" placeholder="Enter heading" class="p-2 mb-2" />
       <input v-model="newEntry.content" placeholder="Enter content" class="p-2">

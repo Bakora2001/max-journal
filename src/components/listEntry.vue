@@ -1,9 +1,7 @@
-<!-- listEntry.vue -->
 <template>
     <div>
-      <!-- I rendered the diary entry from the vue component I created (diaryEntry.vue) -->
       <diary-entry
-        v-for="entry in entries"
+        v-for="entry in filteredEntries"
         :key="entry.id"
         :entry="entry"
         @edit="editEntry"
@@ -13,14 +11,16 @@
   </template>
   
   <script>
-  import axios from "axios";
-  import diaryEntry from "./diaryEntry.vue"; 
+  import axios from 'axios'
+  
   export default {
-    components: {
-      diaryEntry,
-    },
-    props: {
-      entries: Array, // This is theProp to receive entries from the parent component
+    props: ['entries', 'searchQuery'],
+    computed: {
+      filteredEntries() {
+        return this.entries.filter((entry) =>
+          entry.heading.toLowerCase().includes(this.searchQuery.toLowerCase())
+        );
+      },
     },
     methods: {
       async editEntry(entryToEdit) {
