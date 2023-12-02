@@ -1,4 +1,3 @@
-<!-- diaryEntry.vue -->
 <template>
     <div class="p-4 border mb-4">
         <h3 class="text-xl font-semibold mb-4" >{{ entry.heading }}</h3>

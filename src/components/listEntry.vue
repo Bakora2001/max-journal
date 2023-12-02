@@ -1,27 +1,28 @@
+<!-- listEntries.vue
 <template>
-    <div>
-      <diary-entry
-        v-for="entry in filteredEntries"
-        :key="entry.id"
-        :entry="entry"
-        @edit="editEntry"
-        @delete="deleteEntry"
-      ></diary-entry>
-    </div>
-  </template>
-  
-  <script>
-  import axios from 'axios'
+  <div>
+    <diary-entry
+      v-for="entry in filteredEntries"
+      :key="entry.id"
+      :entry="entry"
+      @edit="editEntry"
+      @delete="deleteEntry"
+    ></diary-entry>
+  </div>
+</template>
 
-  export default {
-    props: ['entries', 'searchQuery'],
-    computed: {
-      filteredEntries() {
-        return this.entries.filter((entry) =>
-          entry.heading.toLowerCase().includes(this.searchQuery.toLowerCase())
-        );
-      },
+<script>
+import axios from 'axios';
+
+export default {
+  props: ['entries', 'searchQuery'],
+  computed: {
+    filteredEntries() {
+      return this.entries.filter((entry) =>
+        entry.heading.toLowerCase().includes(this.searchQuery.toLowerCase())
+      );
     },
+  },
     methods: {
       async editEntry(entryToEdit) {
         try {
@@ -46,4 +47,4 @@
     },
   };
   </script>
-  
+   -->

@@ -1,4 +1,3 @@
-<!-- sideBar.vue -->
 <template>
   <div class="flex flex-col h-full bg-gray-200">
     <div class="bg-gray-800 text-white p-4">
@@ -17,12 +16,15 @@
       </div>
     
       <nav>
-        <ul class="space-y-2"> 
+        <ul class="space-y-2">
+          <li class="text-blue-600 border-8 cursor-pointer ">
+            <!-- <router-link :to="{name: 'mainDiary'}">New Entry</router-link> -->
+          </li> 
           <li class="text-blue-600 border-8">
             <router-link :to="{name: 'diaryList'}">Add New Entry</router-link>
           </li>   
-          <li class="text-blue-600 border-8 cursor-pointer ">
-         >View All Entries  
+          <li class="text-blue-600 border-8">
+            <router-link :to="{name: 'viewEntries'}">View All Entries</router-link>
           </li>       
         </ul>
       </nav>

@@ -1,30 +1,31 @@
-<!-- App.vue -->
 <template>
-  <div class="md:flex sm:fle-col" id="app">
+  <div class="bg-[url(journal5.avif)] md:flex sm:fle-col" id="app">
     <div class="sm:full h-auto md:w-[500px] md:h-[600px]">
-      <sideBar/>
+      <sideBar />
     </div>
-    <div class="bg-[logo.png] w-full flex md:flex-col px-4">
-      <mainDiary/>
-      <router-view/>
+    <div class="w-full flex md:flex-col px-4">
+      <router-view :entries="entries" @entrySaved="updateEntries" />
     </div>
-    
   </div>
 </template>
 
 <script>
 import sideBar from './components/sideBar.vue';
-import mainDiary from './components/mainDiary.vue'; //I have imported this from mainDIary.vue
 
 export default {
   name: 'App',
   components: {
-    mainDiary,
-    sideBar
+    sideBar,
+  },
+  data() {
+    return {
+      entries: [],
+    };
+  },
+  methods: {
+    async updateEntries(entry) {
+      this.entries.push(entry);
+    },
   },
 };
 </script>
-
-<style>
-
-</style>
