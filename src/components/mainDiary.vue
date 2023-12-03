@@ -1,4 +1,4 @@
-// mainDiary.vue
+<!-- mainDiary.vue -->
 <template>
   <div>
     <div class="flex flex-col gap-4 mt-2 mb-6">

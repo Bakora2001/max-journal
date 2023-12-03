@@ -1,7 +1,8 @@
+<!-- App.vue -->
 <template>
-  <div class="bg-[url(journal5.avif)] md:flex sm:fle-col" id="app">
+  <div :style="{ backgroundImage: 'url(' + require('@/assets/journal10.avif') + ')' }" class="md:flex sm:fle-col" id="app">
     <div class="sm:full h-auto md:w-[500px] md:h-[600px]">
-      <sideBar />
+      <sideBar :searchQuery="searchQuery" />
     </div>
     <div class="w-full flex md:flex-col px-4">
       <router-view :entries="entries" @entrySaved="updateEntries" />
@@ -20,6 +21,7 @@ export default {
   data() {
     return {
       entries: [],
+      searchQuery: '', 
     };
   },
   methods: {
