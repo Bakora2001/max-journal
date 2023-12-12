@@ -6,6 +6,7 @@
       <input v-model="newEntry.content" placeholder="Enter content" class="p-2" />
       <button @click="saveEntry" class="bg-blue-500 text-white p-2">Save</button>
     </div>
+    <router-link :to="{ name: 'viewEntries' }">View All Entries</router-link>
   </div>
 </template>
 
@@ -29,6 +30,7 @@ export default {
           heading: this.newEntry.heading,
           content: this.newEntry.content,
         });
+        // Emit the new entry to the parent (App.vue)
         this.$emit('entrySaved', response.data);
         this.newEntry.heading = '';
         this.newEntry.content = '';

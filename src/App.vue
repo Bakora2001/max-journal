@@ -1,4 +1,4 @@
-<!-- App.vue -->
+// App.vue
 <template>
   <div :style="{ backgroundImage: 'url(' + require('@/assets/journal10.avif') + ')' }" class="md:flex sm:fle-col" id="app">
     <div class="sm:full h-auto md:w-[500px] md:h-[600px]">
@@ -21,11 +21,11 @@ export default {
   data() {
     return {
       entries: [],
-      searchQuery: '', 
+      searchQuery: '',
     };
   },
   methods: {
-    async updateEntries(entry) {
+    updateEntries(entry) {
       this.entries.push(entry);
     },
   },

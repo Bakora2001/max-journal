@@ -1,3 +1,4 @@
+<!-- sideBar -->
 <template>
   <div class="flex flex-col h-full bg-gray-200">
     <div class="bg-gray-800 text-white p-4">
